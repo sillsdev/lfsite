@@ -83,6 +83,8 @@ services:
       args:
         - ENVIRONMENT=development
     image: lfmerge
+    # Elevated privileges needed for debugging (tested in WSL) -- don't use in production
+    privileged: true
     container_name: lfmerge
     platform: linux/amd64
     depends_on:
