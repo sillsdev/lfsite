@@ -5,7 +5,7 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 
 module.exports = webpackMerge(commonConfig, {
   mode: "development",
-  devtool: 'eval-cheap-module-source-map',
+  devtool: 'source-map',
   resolve: {
     extensions: ['.ts', '.js'],
     modules: [path.resolve(__dirname, 'node_modules')]
